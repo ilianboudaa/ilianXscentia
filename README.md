@@ -118,3 +118,26 @@ bash /CHEMIN/DU/DOSSIER/DECOMPRESSE/scentia/scripts/integrer-corrections.sh .
 Remplacez le chemin par celui du fichier téléchargé. Le script fait une sauvegarde du code, conserve `.git`, remplace les fichiers corrigés et fusionne uniquement les variables publiques Supabase. Il n’effectue aucun commit ni push. Il retire l’ancien `middleware.ts` au profit de `proxy.ts`, comme requis par Next.js 16.
 
 Puis : `pnpm install --frozen-lockfile`, `pnpm dev`, et test du site. Pour GitHub, voir `docs/GITHUB.md`.
+## Site déployé
+
+https://ilian-xscentia.vercel.app
+
+## Vérifications manuelles — 25 octobre 2026
+
+Tests réalisés sur le site déployé :
+- Connexion avec un compte client.
+- Conservation du panier après actualisation.
+- Création d’une commande de démonstration.
+- Consultation de la commande dans l’historique client.
+- Accès au tableau de bord avec le compte administrateur.
+- Affichage des indicateurs et des dernières commandes.
+- Refus d’accès à /admin avec un compte client.
+
+Les commandes sont des démonstrations : aucun paiement réel
+n’est encaissé.
+
+## Skill utilisé
+
+Le skill vercel-react-best-practices est installé dans
+.agents/skills/. Son utilisation et les améliorations appliquées
+sont détaillées dans docs/SKILLS.md.
