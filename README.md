@@ -141,3 +141,7 @@ n’est encaissé.
 Le skill vercel-react-best-practices est installé dans
 .agents/skills/. Son utilisation et les améliorations appliquées
 sont détaillées dans docs/SKILLS.md.
+## Auteur et organisation
+
+Projet réalisé individuellement par Ilian Boudaa.
+L’historique Git retrace les modifications publié.
