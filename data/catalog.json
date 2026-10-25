@@ -1,0 +1,882 @@
+[
+  {
+    "id": "scent-01",
+    "slug": "vanille-etoilee",
+    "name": "Vanille Étoilée",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Sous les étoiles de Madagascar",
+    "family": "gourmande",
+    "familyLabel": "Gourmand",
+    "description": "Vanille de Madagascar · Musc blanc",
+    "story": "Au crépuscule, une brise chaude traverse les champs de vanille. Les gousses fraîchement ouvertes libèrent leur douceur, tandis qu’un musc aérien dépose sur la peau un souvenir lumineux. Une douceur qui semble ne jamais finir.",
+    "destination": "Sous les étoiles de Madagascar",
+    "price": 125,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": true,
+    "isNew": false,
+    "isVanillaCollection": true,
+    "image": "/flacons/vanille-etoilee.svg",
+    "moodColor": "#dcb184",
+    "pyramid": {
+      "top": ["Vanille de Madagascar"],
+      "heart": ["Musc blanc"],
+      "base": ["Musc blanc"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 125,
+        "stock": 30,
+        "sku": "SC-VANILLE-ETOILEE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#edd9cd",
+    "badge": "Best-seller"
+  },
+  {
+    "id": "botanique-jardin-de-pivoine",
+    "slug": "jardin-de-pivoine",
+    "name": "Jardin de Pivoine",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Un printemps éternel",
+    "family": "florale",
+    "familyLabel": "Floral",
+    "description": "Pivoine · Rose tendre · Poire",
+    "story": "Traversez un jardin où les pivoines viennent d’éclore. La rose tendre et la poire fraîche accompagnent vos pas dans une lumière douce. Un bouquet vivant sur la peau.",
+    "destination": "Un printemps éternel",
+    "price": 115,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": true,
+    "isVanillaCollection": false,
+    "image": "/flacons/jardin-de-pivoine.svg",
+    "moodColor": "#e8a5b1",
+    "pyramid": {
+      "top": ["Pivoine"],
+      "heart": ["Rose tendre"],
+      "base": ["Poire"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 115,
+        "stock": 30,
+        "sku": "SC-JARDIN-DE-PIVOINE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#f0dedf",
+    "badge": "Nouveau"
+  },
+  {
+    "id": "scent-02",
+    "slug": "vanille-noire",
+    "name": "Vanille Noire",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "La nuit dans un palais d’ambre",
+    "family": "gourmande",
+    "familyLabel": "Gourmand",
+    "description": "Vanille bourbon · Ambre · Tonka",
+    "story": "Les portes d’un salon feutré s’ouvrent sur un sillage de vanille bourbon, d’ambre et de fève tonka. Tout ralentit. La nuit devient velours. Un secret chaud, enveloppant et magnétique.",
+    "destination": "La nuit dans un palais d’ambre",
+    "price": 145,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": true,
+    "image": "/flacons/vanille-noire.svg",
+    "moodColor": "#ae7d62",
+    "pyramid": {
+      "top": ["Vanille bourbon"],
+      "heart": ["Ambre"],
+      "base": ["Tonka"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 145,
+        "stock": 30,
+        "sku": "SC-VANILLE-NOIRE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#e6d6cf",
+    "badge": "Iconique"
+  },
+  {
+    "id": "botanique-fleur-de-coton",
+    "slug": "fleur-de-coton",
+    "name": "Fleur de Coton",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "florale",
+    "familyLabel": "Floral",
+    "description": "Coton · Iris · Musc poudré",
+    "story": "Fermez les yeux. Coton, Iris, Musc poudré composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 110,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/fleur-de-coton.svg",
+    "moodColor": "#e5d4c7",
+    "pyramid": {
+      "top": ["Coton"],
+      "heart": ["Iris"],
+      "base": ["Musc poudré"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 110,
+        "stock": 30,
+        "sku": "SC-FLEUR-DE-COTON-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#ede9e2",
+    "badge": ""
+  },
+  {
+    "id": "botanique-rose-de-minuit",
+    "slug": "rose-de-minuit",
+    "name": "Rose de Minuit",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Minuit dans un jardin secret",
+    "family": "florale",
+    "familyLabel": "Floral",
+    "description": "Rose de Damas · Patchouli",
+    "story": "Sous la lune, la rose de Damas dévoile sa profondeur. Le patchouli dessine un chemin mystérieux entre les ombres et les fleurs. L’élégance d’une rose après la tombée du jour.",
+    "destination": "Minuit dans un jardin secret",
+    "price": 155,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/rose-de-minuit.svg",
+    "moodColor": "#c78696",
+    "pyramid": {
+      "top": ["Rose de Damas"],
+      "heart": ["Patchouli"],
+      "base": ["Patchouli"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 155,
+        "stock": 30,
+        "sku": "SC-ROSE-DE-MINUIT-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#e9cdd2",
+    "badge": "Exclusivité"
+  },
+  {
+    "id": "scent-04",
+    "slug": "creme-brulee",
+    "name": "Crème Brûlée",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Un après-midi à Paris",
+    "family": "gourmande",
+    "familyLabel": "Gourmand",
+    "description": "Caramel · Vanille · Praliné",
+    "story": "Dans une pâtisserie cachée, la croûte de caramel craque doucement. La vanille et le praliné dansent dans l’air tiède, comme une promesse délicieuse. Le bonheur a parfois le parfum d’un dessert.",
+    "destination": "Un après-midi à Paris",
+    "price": 129,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": true,
+    "image": "/flacons/creme-brulee.svg",
+    "moodColor": "#d7a65c",
+    "pyramid": {
+      "top": ["Caramel"],
+      "heart": ["Vanille"],
+      "base": ["Praliné"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 129,
+        "stock": 30,
+        "sku": "SC-CREME-BRULEE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#f0dfc6",
+    "badge": "Coup de cœur"
+  },
+  {
+    "id": "botanique-neroli-soleil",
+    "slug": "neroli-soleil",
+    "name": "Néroli Soleil",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "fraiche",
+    "familyLabel": "Frais",
+    "description": "Néroli · Bergamote · Fleur d’oranger",
+    "story": "Fermez les yeux. Néroli, Bergamote, Fleur d’oranger composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 119,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/neroli-soleil.svg",
+    "moodColor": "#e8c579",
+    "pyramid": {
+      "top": ["Néroli"],
+      "heart": ["Bergamote"],
+      "base": ["Fleur d’oranger"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 119,
+        "stock": 30,
+        "sku": "SC-NEROLI-SOLEIL-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#f4e9d0",
+    "badge": ""
+  },
+  {
+    "id": "botanique-bois-de-santal",
+    "slug": "bois-de-santal",
+    "name": "Bois de Santal",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "boisee",
+    "familyLabel": "Boisé",
+    "description": "Santal · Cèdre · Musc",
+    "story": "Fermez les yeux. Santal, Cèdre, Musc composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 149,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/bois-de-santal.svg",
+    "moodColor": "#c8ab88",
+    "pyramid": {
+      "top": ["Santal"],
+      "heart": ["Cèdre"],
+      "base": ["Musc"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 149,
+        "stock": 30,
+        "sku": "SC-BOIS-DE-SANTAL-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#ded9ce",
+    "badge": ""
+  },
+  {
+    "id": "scent-05",
+    "slug": "vanille-jasmin",
+    "name": "Vanille & Jasmin",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Une nuit blanche à Marrakech",
+    "family": "gourmande",
+    "familyLabel": "Gourmand",
+    "description": "Jasmin sambac · Vanille · Ambre",
+    "story": "Le jasmin s’épanouit dans les ruelles silencieuses. Plus loin, la vanille et l’ambre réchauffent l’air du soir. Chaque pas devient un souvenir. Le charme des nuits qui ne finissent pas.",
+    "destination": "Une nuit blanche à Marrakech",
+    "price": 135,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": true,
+    "isVanillaCollection": true,
+    "image": "/flacons/vanille-jasmin.svg",
+    "moodColor": "#e5bd93",
+    "pyramid": {
+      "top": ["Jasmin sambac"],
+      "heart": ["Vanille"],
+      "base": ["Ambre"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 135,
+        "stock": 30,
+        "sku": "SC-VANILLE-JASMIN-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#f0e4d6",
+    "badge": "Nouveau"
+  },
+  {
+    "id": "botanique-lait-damande",
+    "slug": "lait-damande",
+    "name": "Lait d’Amande",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "gourmande",
+    "familyLabel": "Gourmand",
+    "description": "Amande douce · Lait · Vanille",
+    "story": "Fermez les yeux. Amande douce, Lait, Vanille composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 118,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": true,
+    "image": "/flacons/lait-damande.svg",
+    "moodColor": "#d9c0a2",
+    "pyramid": {
+      "top": ["Amande douce"],
+      "heart": ["Lait"],
+      "base": ["Vanille"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 118,
+        "stock": 30,
+        "sku": "SC-LAIT-DAMANDE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#eee4d9",
+    "badge": ""
+  },
+  {
+    "id": "botanique-figue-blanche",
+    "slug": "figue-blanche",
+    "name": "Figue Blanche",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "fraiche",
+    "familyLabel": "Frais",
+    "description": "Figue · Thé blanc · Feuilles vertes",
+    "story": "Fermez les yeux. Figue, Thé blanc, Feuilles vertes composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 125,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/figue-blanche.svg",
+    "moodColor": "#b4bf95",
+    "pyramid": {
+      "top": ["Figue"],
+      "heart": ["Thé blanc"],
+      "base": ["Feuilles vertes"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 125,
+        "stock": 30,
+        "sku": "SC-FIGUE-BLANCHE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#e3e8d9",
+    "badge": ""
+  },
+  {
+    "id": "botanique-orchidee-velours",
+    "slug": "orchidee-velours",
+    "name": "Orchidée Velours",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "florale",
+    "familyLabel": "Floral",
+    "description": "Orchidée · Prune · Musc",
+    "story": "Fermez les yeux. Orchidée, Prune, Musc composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 159,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/orchidee-velours.svg",
+    "moodColor": "#b99cbe",
+    "pyramid": {
+      "top": ["Orchidée"],
+      "heart": ["Prune"],
+      "base": ["Musc"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 159,
+        "stock": 30,
+        "sku": "SC-ORCHIDEE-VELOURS-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#e6d8e7",
+    "badge": ""
+  },
+  {
+    "id": "botanique-miel-de-provence",
+    "slug": "miel-de-provence",
+    "name": "Miel de Provence",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "gourmande",
+    "familyLabel": "Gourmand",
+    "description": "Miel · Fleur d’oranger · Vanille",
+    "story": "Fermez les yeux. Miel, Fleur d’oranger, Vanille composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 132,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": true,
+    "image": "/flacons/miel-de-provence.svg",
+    "moodColor": "#dfb976",
+    "pyramid": {
+      "top": ["Miel"],
+      "heart": ["Fleur d’oranger"],
+      "base": ["Vanille"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 132,
+        "stock": 30,
+        "sku": "SC-MIEL-DE-PROVENCE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#f3e3c8",
+    "badge": ""
+  },
+  {
+    "id": "botanique-petales-de-soie",
+    "slug": "petales-de-soie",
+    "name": "Pétales de Soie",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "florale",
+    "familyLabel": "Floral",
+    "description": "Magnolia · Freesia · Musc",
+    "story": "Fermez les yeux. Magnolia, Freesia, Musc composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 122,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/petales-de-soie.svg",
+    "moodColor": "#dfb5c0",
+    "pyramid": {
+      "top": ["Magnolia"],
+      "heart": ["Freesia"],
+      "base": ["Musc"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 122,
+        "stock": 30,
+        "sku": "SC-PETALES-DE-SOIE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#f1e0e2",
+    "badge": ""
+  },
+  {
+    "id": "botanique-the-de-lune",
+    "slug": "the-de-lune",
+    "name": "Thé de Lune",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "fraiche",
+    "familyLabel": "Frais",
+    "description": "Thé vert · Citron · Musc",
+    "story": "Fermez les yeux. Thé vert, Citron, Musc composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 112,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/the-de-lune.svg",
+    "moodColor": "#bcc8a9",
+    "pyramid": {
+      "top": ["Thé vert"],
+      "heart": ["Citron"],
+      "base": ["Musc"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 112,
+        "stock": 30,
+        "sku": "SC-THE-DE-LUNE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#e4e9dd",
+    "badge": ""
+  },
+  {
+    "id": "botanique-ambre-precieux",
+    "slug": "ambre-precieux",
+    "name": "Ambre Précieux",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "boisee",
+    "familyLabel": "Boisé",
+    "description": "Ambre · Résine · Bois doux",
+    "story": "Fermez les yeux. Ambre, Résine, Bois doux composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 165,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/ambre-precieux.svg",
+    "moodColor": "#bd8d69",
+    "pyramid": {
+      "top": ["Ambre"],
+      "heart": ["Résine"],
+      "base": ["Bois doux"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 165,
+        "stock": 30,
+        "sku": "SC-AMBRE-PRECIEUX-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#e7d5c6",
+    "badge": ""
+  },
+  {
+    "id": "botanique-vanille-rosee",
+    "slug": "vanille-rosee",
+    "name": "Vanille Rosée",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "L’aube dans une roseraie",
+    "family": "gourmande",
+    "familyLabel": "Gourmand",
+    "description": "Vanille · Rose · Framboise",
+    "story": "Les pétales perlés de rosée s’éveillent. Une framboise délicate illumine la vanille, et le jardin devient un rêve tendre. La gourmandise rencontre la poésie.",
+    "destination": "L’aube dans une roseraie",
+    "price": 139,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": true,
+    "isNew": false,
+    "isVanillaCollection": true,
+    "image": "/flacons/vanille-rosee.svg",
+    "moodColor": "#e1a3ad",
+    "pyramid": {
+      "top": ["Vanille"],
+      "heart": ["Rose"],
+      "base": ["Framboise"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 139,
+        "stock": 30,
+        "sku": "SC-VANILLE-ROSEE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#f2d9dd",
+    "badge": "Best-seller"
+  },
+  {
+    "id": "botanique-nuit-de-cachemire",
+    "slug": "nuit-de-cachemire",
+    "name": "Nuit de Cachemire",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "boisee",
+    "familyLabel": "Boisé",
+    "description": "Cachemire · Iris · Bois ambrés",
+    "story": "Fermez les yeux. Cachemire, Iris, Bois ambrés composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 169,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/nuit-de-cachemire.svg",
+    "moodColor": "#a99a9b",
+    "pyramid": {
+      "top": ["Cachemire"],
+      "heart": ["Iris"],
+      "base": ["Bois ambrés"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 169,
+        "stock": 30,
+        "sku": "SC-NUIT-DE-CACHEMIRE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#e0d9d7",
+    "badge": ""
+  },
+  {
+    "id": "scent-03",
+    "slug": "fleur-de-vanille",
+    "name": "Fleur de Vanille",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Un jardin tropical au lever du jour",
+    "family": "gourmande",
+    "familyLabel": "Gourmand",
+    "description": "Vanille · Ylang-ylang · Orchidée",
+    "story": "Les premiers rayons caressent les orchidées. La vanille se mêle à l’ylang-ylang dans une lumière dorée, entre fleurs exotiques et peau chauffée par le soleil. Une escapade florale et solaire.",
+    "destination": "Un jardin tropical au lever du jour",
+    "price": 142,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": true,
+    "isVanillaCollection": true,
+    "image": "/flacons/fleur-de-vanille.svg",
+    "moodColor": "#d9b18d",
+    "pyramid": {
+      "top": ["Vanille"],
+      "heart": ["Ylang-ylang"],
+      "base": ["Orchidée"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 142,
+        "stock": 30,
+        "sku": "SC-FLEUR-DE-VANILLE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#f0e0d1",
+    "badge": "Nouveau"
+  },
+  {
+    "id": "botanique-cerise-blanche",
+    "slug": "cerise-blanche",
+    "name": "Cerise Blanche",
+    "subtitle": "Eau de parfum · Collection botanique",
+    "tagline": "Le jardin des émotions",
+    "family": "fruite",
+    "familyLabel": "Fruité",
+    "description": "Cerise · Amande · Musc",
+    "story": "Fermez les yeux. Cerise, Amande, Musc composent un paysage sensible, une rencontre entre lumière, matière et souvenirs. Chaque note se dévoile lentement, comme une nouvelle destination. Un voyage à porter sur la peau.",
+    "destination": "Le jardin des émotions",
+    "price": 128,
+    "volume": "50 ml",
+    "rating": 0,
+    "reviewCount": 0,
+    "isBestseller": false,
+    "isNew": false,
+    "isVanillaCollection": false,
+    "image": "/flacons/cerise-blanche.svg",
+    "moodColor": "#d99ba6",
+    "pyramid": {
+      "top": ["Cerise"],
+      "heart": ["Amande"],
+      "base": ["Musc"]
+    },
+    "profile": {
+      "intensity": 3,
+      "sillage": 3,
+      "longevity": "Composition de démonstration",
+      "season": "Toutes saisons",
+      "occasion": "Votre signature personnelle"
+    },
+    "variants": [
+      {
+        "size": "50ml",
+        "price": 128,
+        "stock": 30,
+        "sku": "SC-CERISE-BLANCHE-50"
+      }
+    ],
+    "ingredients": ["Composition illustrative — projet pédagogique"],
+    "bottleBackground": "#f2dce0",
+    "badge": ""
+  }
+]

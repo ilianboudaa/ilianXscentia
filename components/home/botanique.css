@@ -1,0 +1,1018 @@
+.scentia-home {
+  .hero {
+    min-height: 650px;
+    background: linear-gradient(90deg, #f6e8e4 0%, #f7e9e6 46%, #ead6d0 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+  }
+  .heroText {
+    padding: 115px 7vw 90px;
+    position: relative;
+    z-index: 1;
+  }
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.29em;
+    text-transform: uppercase;
+    color: var(--deep);
+    font-weight: 600;
+  }
+  .hero h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: clamp(48px, 5.3vw, 84px);
+    line-height: 1.13;
+    margin: 26px 0;
+  }
+  .hero h1 em {
+    color: #9b626a;
+    font-weight: 400;
+  }
+  .hero p {
+    line-height: 1.9;
+    color: #77676a;
+    max-width: 410px;
+    font-size: 15px;
+  }
+  .btn {
+    border: 1px solid var(--deep);
+    background: var(--deep);
+    color: #fff;
+    padding: 16px 25px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: 0.2s;
+  }
+  .btn:hover {
+    background: #593e44;
+    transform: translateY(-1px);
+  }
+  .btn.secondary {
+    background: transparent;
+    color: var(--deep);
+  }
+  .btn.secondary:hover {
+    background: #f7e9e7;
+  }
+  .heroButtons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+  .heroArt {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 600px;
+  }
+  .flower {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.6;
+  }
+  .flower svg {
+    width: 100%;
+    height: 100%;
+  }
+  .flower.one {
+    width: 530px;
+    right: -120px;
+    top: -90px;
+    transform: rotate(18deg);
+  }
+  .flower.two {
+    width: 400px;
+    left: -150px;
+    bottom: -180px;
+    transform: rotate(-35deg);
+  }
+  .heroBottle {
+    position: relative;
+    transform: rotate(-6deg) scale(1.5);
+    filter: drop-shadow(22px 32px 25px #6f494840);
+  }
+  .heroNote {
+    position: absolute;
+    right: 12%;
+    bottom: 9%;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-size: 24px;
+    color: #a46e74;
+  }
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid var(--line);
+    background: #fffaf7;
+  }
+  .benefit {
+    text-align: center;
+    padding: 27px 15px;
+    font-size: 11px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    border-right: 1px solid var(--line);
+  }
+  .benefit span {
+    color: var(--rose);
+    font-size: 17px;
+    margin-right: 10px;
+  }
+  .section {
+    padding: 92px 5%;
+  }
+  .sectionHead {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .sectionHead h2 {
+    font:
+      400 clamp(35px, 4vw, 53px)/1.2 "Playfair Display",
+      serif;
+    margin: 13px 0;
+  }
+  .sectionHead p {
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  .toolbar {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+  .chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .chip {
+    border: 1px solid var(--line);
+    background: white;
+    padding: 11px 15px;
+    border-radius: 40px;
+    color: #665c58;
+    font-size: 12px;
+  }
+  .chip.active {
+    background: var(--deep);
+    color: white;
+    border-color: var(--deep);
+  }
+  .search {
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    background: white;
+    min-width: 210px;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 26px;
+  }
+  .product {
+    min-width: 0;
+  }
+  .visual {
+    height: 330px;
+    background: var(--bg, #f3e5e0);
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .visual:before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #ffffff70;
+    filter: blur(4px);
+    top: 50px;
+    left: calc(50% - 110px);
+  }
+  .visual:after {
+    content: "✿";
+    position: absolute;
+    font-size: 175px;
+    color: #ffffff50;
+    top: -70px;
+    right: -45px;
+  }
+  .bottle {
+    position: relative;
+    width: 110px;
+    height: 155px;
+    z-index: 2;
+    filter: drop-shadow(11px 16px 12px #4b29262c);
+    transition: transform 0.35s;
+  }
+  .product:hover .bottle {
+    transform: translateY(-9px) rotate(-3deg);
+  }
+  .cap {
+    position: absolute;
+    top: -27px;
+    left: 35px;
+    width: 40px;
+    height: 32px;
+    background: linear-gradient(90deg, #b69b79, #e3d0a5, #9c805f);
+    border-radius: 4px 4px 1px 1px;
+    box-shadow: inset -5px 0 #73553d25;
+  }
+  .neck {
+    position: absolute;
+    top: 0;
+    left: 43px;
+    width: 24px;
+    height: 15px;
+    background: #d4b9a5;
+  }
+  .glass {
+    position: absolute;
+    top: 12px;
+    width: 110px;
+    height: 143px;
+    border-radius: 14px 14px 19px 19px;
+    background: linear-gradient(
+      110deg,
+      #fff9 0%,
+      var(--juice, #e2b3a6) 27%,
+      var(--juice, #e2b3a6) 75%,
+      #fff7 100%
+    );
+    border: 3px solid #ffffff85;
+    box-shadow:
+      inset 8px 0 12px #fff8,
+      inset -9px 0 9px #6d4b4b20;
+  }
+  .labelBottle {
+    position: absolute;
+    top: 67px;
+    left: 12px;
+    width: 86px;
+    height: 60px;
+    background: #fff9f1e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    border: 1px solid #fff;
+  }
+  .labelBottle b {
+    font: 12px "Playfair Display";
+    letter-spacing: 0.13em;
+  }
+  .labelBottle small {
+    font: 7px "Playfair Display";
+    margin-top: 5px;
+  }
+  .tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #fffaf6;
+    padding: 7px 11px;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    z-index: 3;
+  }
+  .wish {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    background: #fffdf9d9;
+    border: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 21px;
+    z-index: 4;
+    color: var(--deep);
+  }
+  .wish.active {
+    color: #bd5e71;
+  }
+  .productMeta {
+    padding: 17px 2px;
+  }
+  .productMeta .family {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--rose);
+  }
+  .productMeta h3 {
+    font: 400 23px "Playfair Display";
+    margin: 8px 0;
+  }
+  .productMeta p {
+    font-size: 12px;
+    color: var(--muted);
+    min-height: 34px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .productBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+  }
+  .productBottom strong {
+    font-size: 16px;
+  }
+  .add {
+    background: transparent;
+    border: 1px solid #bd9899;
+    color: var(--deep);
+    padding: 10px 14px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+  .add:hover {
+    background: var(--deep);
+    color: white;
+  }
+  .story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #e9d8d2;
+  }
+  .storyArt {
+    min-height: 480px;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle at 50% 48%, #fffcf3 0 10%, #d6b4ad 70%);
+    position: relative;
+    overflow: hidden;
+  }
+  .storyArt:before {
+    content: "✿";
+    font-size: 400px;
+    color: #ffffff44;
+    position: absolute;
+    transform: rotate(20deg);
+  }
+  .storyArt .bottle {
+    transform: scale(1.5);
+  }
+  .storyText {
+    padding: 90px 9%;
+    align-self: center;
+  }
+  .storyText h2 {
+    font: 400 48px "Playfair Display";
+    line-height: 1.2;
+  }
+  .storyText p {
+    line-height: 2;
+    color: #756463;
+    max-width: 460px;
+  }
+}
+
+.scentia-home .eyebrow {
+  color: #76545a;
+  font-size: 11px;
+  letter-spacing: 0.29em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.scentia-home .btn {
+  border: 1px solid #76545a;
+  background: #76545a;
+  color: white;
+  padding: 16px 25px;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: 0.2s;
+  border-radius: 2px;
+}
+.scentia-home .btn.secondary {
+  background: transparent;
+  color: #76545a;
+}
+.scentia-home .productMeta h3 {
+  margin: 8px 0;
+}
+.scentia-home .visual-link {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+.scentia-home .visual-link:focus-visible {
+  outline: 3px solid #76545a;
+  outline-offset: -4px;
+}
+.scentia-home .product {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 490px;
+}
+.scentia-home .search {
+  min-width: 0;
+  flex: 1;
+  max-width: 330px;
+}
+.scentia-home .productBottom .add {
+  white-space: nowrap;
+}
+.scentia-home .toolbar select {
+  border: 1px solid #e9ddd7;
+  padding: 12px;
+  background: white;
+  max-width: 100%;
+}
+.scentia-home .empty-state {
+  padding: 60px 0;
+  text-align: center;
+  color: #827771;
+  grid-column: 1/-1;
+}
+@media (max-width: 1000px) {
+  .scentia-home .products {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .scentia-home .heroText {
+    padding-left: 5vw;
+  }
+}
+@media (max-width: 700px) {
+  .scentia-home .hero {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .scentia-home .heroText {
+    padding: 65px 7% 25px;
+  }
+  .scentia-home .hero h1 {
+    font-size: 51px;
+  }
+  .scentia-home .heroArt {
+    min-height: 390px;
+  }
+  .scentia-home .heroBottle {
+    transform: scale(1.2) rotate(-6deg);
+  }
+  .scentia-home .benefits {
+    grid-template-columns: 1fr;
+  }
+  .scentia-home .benefit {
+    padding: 15px;
+  }
+  .scentia-home .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .scentia-home .visual {
+    height: 245px;
+  }
+  .scentia-home .product .bottle {
+    transform: scale(0.8);
+  }
+  .scentia-home .product:hover .bottle {
+    transform: scale(0.8);
+  }
+  .scentia-home .productMeta h3 {
+    font-size: 20px;
+  }
+  .scentia-home .productBottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .scentia-home .section {
+    padding: 65px 4%;
+  }
+  .scentia-home .story {
+    grid-template-columns: 1fr;
+  }
+  .scentia-home .storyArt {
+    min-height: 330px;
+  }
+  .scentia-home .storyText {
+    padding: 50px 7%;
+  }
+  .scentia-home .storyText h2 {
+    font-size: 37px;
+  }
+  .scentia-home .flower.one {
+    right: -210px;
+  }
+}
+/* Voyage olfactif — expérience immersive */
+.visual {
+  cursor: pointer;
+}
+.productMeta h3 {
+  cursor: pointer;
+}
+.visual:focus-visible {
+  outline: 3px solid #9e6979;
+  outline-offset: 3px;
+}
+.voyage {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  display: none;
+  overflow-y: auto;
+  background: #1c1519;
+  color: #fff8f2;
+  isolation: isolate;
+}
+.voyage.active {
+  display: block;
+  animation: journeyIn 0.65s ease both;
+}
+@keyframes journeyIn {
+  from {
+    opacity: 0;
+    clip-path: circle(0% at 50% 50%);
+  }
+  to {
+    opacity: 1;
+    clip-path: circle(150% at 50% 50%);
+  }
+}
+.voyage-scene {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 90px 7%;
+  background:
+    radial-gradient(circle at 72% 43%, var(--vlight) 0%, transparent 45%),
+    linear-gradient(135deg, var(--vdark), #1c1519 90%);
+}
+.voyage-scene:before {
+  content: "✿";
+  position: absolute;
+  right: -8vw;
+  top: -25vh;
+  font-size: min(68vw, 850px);
+  line-height: 1;
+  color: #ffffff0a;
+  animation: slowRotate 35s linear infinite;
+  pointer-events: none;
+}
+@keyframes slowRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.voyage-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  animation: riseIn 1.1s 0.2s both;
+}
+.voyage-copy .kicker {
+  font-size: 11px;
+  letter-spacing: 0.35em;
+  color: #f0c9bd;
+  text-transform: uppercase;
+}
+.voyage-copy h2 {
+  font:
+    400 clamp(55px, 7vw, 112px)/1.04 "Playfair Display",
+    Georgia,
+    serif;
+  margin: 20px 0 24px;
+}
+.voyage-copy h2 em {
+  font-weight: 400;
+  color: #f0c9bd;
+}
+.voyage-copy .storyline {
+  font:
+    italic 25px/1.5 "Playfair Display",
+    Georgia,
+    serif;
+  color: #f4d9d1;
+}
+.voyage-copy p {
+  font-size: 15px;
+  line-height: 2;
+  max-width: 510px;
+  color: #f2e4df;
+}
+.voyage-copy .notes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 32px 0;
+}
+.voyage-copy .note {
+  border-top: 1px solid #ffffff6b;
+  padding-top: 14px;
+}
+.voyage-copy .note small {
+  display: block;
+  color: #e2c6c2;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 9px;
+}
+.voyage-copy .note span {
+  font:
+    17px "Playfair Display",
+    Georgia,
+    serif;
+}
+.voyage-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.voyage-buttons button {
+  padding: 15px 20px;
+  border: 1px solid #f1d5cd;
+  background: #f1d5cd;
+  color: #34272a;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+}
+.voyage-buttons .outline {
+  background: transparent;
+  color: white;
+}
+.voyage-close {
+  position: fixed;
+  right: 25px;
+  top: 22px;
+  z-index: 155;
+  border: 1px solid #ffffff75;
+  border-radius: 50%;
+  background: #281c25a8;
+  color: white;
+  width: 49px;
+  height: 49px;
+  font-size: 29px;
+  cursor: pointer;
+}
+.voyage-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 560px;
+}
+.voyage-art .bottle {
+  transform: scale(2.3);
+  animation: floatBottle 6s ease-in-out infinite;
+  filter: drop-shadow(24px 35px 28px #0008);
+}
+@keyframes floatBottle {
+  50% {
+    transform: translateY(-18px) scale(2.35) rotate(3deg);
+  }
+}
+.voyage-orbit {
+  position: absolute;
+  width: min(35vw, 440px);
+  height: min(35vw, 440px);
+  border: 1px solid #fff4;
+  border-radius: 50%;
+  box-shadow:
+    0 0 90px #fff2,
+    inset 0 0 80px #fff1;
+  animation: breathe 5s ease-in-out infinite;
+}
+@keyframes breathe {
+  50% {
+    transform: scale(1.13);
+    opacity: 0.45;
+  }
+}
+.petal {
+  position: absolute;
+  top: -12%;
+  font-size: 26px;
+  opacity: 0.6;
+  pointer-events: none;
+  animation: petalFall linear infinite;
+}
+@keyframes petalFall {
+  to {
+    transform: translate3d(90px, 115vh, 0) rotate(580deg);
+    opacity: 0;
+  }
+}
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.voyage-hint {
+  position: absolute;
+  bottom: 25px;
+  left: 7%;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #eacdc5;
+}
+@media (max-width: 800px) {
+  .voyage-scene {
+    grid-template-columns: 1fr;
+    padding: 95px 7% 70px;
+  }
+  .voyage-art {
+    grid-row: 1;
+    min-height: 300px;
+  }
+  .voyage-art .bottle {
+    transform: scale(1.35);
+    animation: none;
+  }
+  .voyage-orbit {
+    width: 240px;
+    height: 240px;
+  }
+  .voyage-copy h2 {
+    font-size: clamp(48px, 12vw, 75px);
+  }
+  .voyage-copy .notes {
+    gap: 7px;
+  }
+  .voyage-copy .note span {
+    font-size: 14px;
+  }
+  .voyage-hint {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .voyage,
+  .voyage * {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --ink: #342e2c;
+  --muted: #827771;
+  --cream: #fcf9f5;
+  --blush: #f5e7e3;
+  --rose: #ba7d7a;
+  --deep: #76545a;
+  --line: #e9ddd7;
+  --sage: #a0a68f;
+  --shadow: 0 18px 55px #5a37321c;
+}
+body {
+  background: #fcf9f5;
+  color: #342e2c;
+}
+.botanical-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: #fffcf9f5;
+  backdrop-filter: blur(12px);
+}
+.botanical-announcement {
+  background: #7c575e;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.botanical-nav {
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 5%;
+  border-bottom: 1px solid #e9ddd7;
+}
+.botanical-brand {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  letter-spacing: 0.21em;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 1.4;
+}
+.botanical-brand small {
+  display: block;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.36em;
+  margin-top: 0;
+}
+.botanical-navlinks {
+  display: flex;
+  gap: 28px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.botanical-navlinks a:hover {
+  color: #ba7d7a;
+}
+.botanical-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 0;
+  background: none;
+  color: #76545a;
+  min-width: 40px;
+  min-height: 42px;
+}
+.botanical-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #76545a;
+  color: white;
+  font-size: 9px;
+  min-width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
+}
+.botanical-mobile {
+  display: none;
+}
+.botanical-mobile-menu {
+  display: grid;
+  gap: 20px;
+  padding: 24px 5%;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-bottom: 1px solid #e9ddd7;
+}
+.account-menu {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  width: 250px;
+  background: #fffaf7;
+  border: 1px solid #e9ddd7;
+  box-shadow: 0 12px 40px #342e2c20;
+  z-index: 50;
+}
+.account-menu a,
+.account-menu button {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 12px;
+  text-align: left;
+}
+.account-menu a:hover,
+.account-menu button:hover {
+  background: #f5e7e3;
+}
+.botanical-footer {
+  background: #4b373b;
+  color: #fdf5f1;
+  padding: 65px 5% 30px;
+}
+.botanical-footer h2 {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.botanical-footer p {
+  line-height: 1.8;
+  color: #d6c2c1;
+  max-width: 370px;
+  margin-top: 22px;
+  font-size: 13px;
+}
+.botanical-footer a:not(.botanical-brand) {
+  display: block;
+  margin: 12px 0;
+  color: #e4d4d2;
+  font-size: 13px;
+}
+.botanical-footer-bottom {
+  border-top: 1px solid #ffffff30;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 11px;
+  color: #d6c2c1;
+  line-height: 1.8;
+}
+.botanical-quiz {
+  background: #f8eee9;
+  text-align: center;
+  padding: 90px 5%;
+}
+.botanical-quiz h2 {
+  font:
+    400 clamp(35px, 4vw, 49px)/1.2 Georgia,
+    serif;
+  margin: 15px 0;
+}
+.botanical-quiz > p {
+  color: #827771;
+}
+.quiz-choice {
+  padding: 15px 24px;
+  border: 1px solid #dbc4c0;
+  background: #fffaf7;
+  color: #342e2c;
+  min-height: 48px;
+}
+.quiz-choice:hover {
+  background: #76545a;
+  color: white;
+}
+.quiz-result {
+  max-width: 650px;
+  margin: 28px auto 0;
+  background: white;
+  padding: 30px;
+}
+@media (max-width: 1050px) {
+  .botanical-navlinks {
+    gap: 15px;
+    font-size: 10px;
+  }
+  .botanical-nav {
+    gap: 12px;
+  }
+}
+@media (max-width: 800px) {
+  .botanical-navlinks {
+    display: none;
+  }
+  .botanical-mobile {
+    display: flex;
+  }
+  .botanical-nav {
+    height: 76px;
+    padding: 0 4%;
+  }
+  .botanical-brand {
+    font-size: 24px;
+  }
+  .botanical-announcement {
+    font-size: 9px;
+    line-height: 1.7;
+  }
+  .botanical-quiz {
+    padding: 65px 5%;
+  }
+}
+
+:root {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+}
+body {
+  font-family: var(--font-sans);
+}
+.botanical-brand,
+.botanical-quiz h2 {
+  font-family: var(--font-serif);
+}
+.scentia-home .wish{display:grid;place-items:center}
+@media(max-width:400px){.botanical-brand{font-size:20px;letter-spacing:.14em}.botanical-icon{min-width:32px;padding:6px}.botanical-nav{gap:8px}.scentia-home .productBottom .add{font-size:9px;padding:10px;letter-spacing:.06em}}
