@@ -774,10 +774,17 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
   .voyage,
   .voyage * {
     animation: none !important;
     scroll-behavior: auto !important;
+  }
+  .scroll-to-top {
+    animation: none !important;
+    transition: none !important;
   }
 }
 
@@ -1016,3 +1023,61 @@ body {
 }
 .scentia-home .wish{display:grid;place-items:center}
 @media(max-width:400px){.botanical-brand{font-size:20px;letter-spacing:.14em}.botanical-icon{min-width:32px;padding:6px}.botanical-nav{gap:8px}.scentia-home .productBottom .add{font-size:9px;padding:10px;letter-spacing:.06em}}
+
+/* Bouton « Retour en haut » */
+.scroll-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--cream, #fcf9f5);
+  color: var(--deep, #76545a);
+  border: 1px solid var(--rose, #ba7d7a);
+  box-shadow: 0 4px 18px rgba(118, 84, 90, 0.18);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: scrollToTopFadeIn 0.25s ease-out forwards;
+}
+
+@keyframes scrollToTopFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.scroll-to-top:hover {
+  background: var(--deep, #76545a);
+  color: #ffffff;
+  border-color: var(--deep, #76545a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(118, 84, 90, 0.28);
+}
+
+.scroll-to-top:active {
+  transform: translateY(0);
+}
+
+.scroll-to-top:focus-visible {
+  outline: 2px solid var(--deep, #76545a);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .scroll-to-top {
+    bottom: max(20px, calc(16px + env(safe-area-inset-bottom, 0px)));
+    right: max(20px, calc(16px + env(safe-area-inset-right, 0px)));
+    width: 44px;
+    height: 44px;
+  }
+}

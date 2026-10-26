@@ -9,6 +9,7 @@ import { OLFACTORY_FAMILIES, PERFUMES_DATA } from "@/data/perfumes";
 import { money } from "@/lib/format";
 import { Bottle, Flower } from "./Bottle";
 import { BotanicalQuiz } from "./BotanicalQuiz";
+import { ScrollToTop } from "./ScrollToTop";
 export function BotanicalHome({ perfumes }: { perfumes: Perfume[] }) {
   const [family, setFamily] = useState("all"),
     [search, setSearch] = useState(""),
@@ -232,6 +233,7 @@ export function BotanicalHome({ perfumes }: { perfumes: Perfume[] }) {
         </div>
       </section>
       <BotanicalQuiz perfumes={perfumes} />
+      <ScrollToTop />
     </div>
   );
 }

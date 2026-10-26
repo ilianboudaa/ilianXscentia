@@ -10,12 +10,15 @@ Si votre édition d’Antigravity ne découvre pas automatiquement ce chemin, me
 
 ## Changements guidés et vérifiables
 
-| Règle                  | Fichiers concernés                                      | Application concrète                                                                                                                          |
-| ---------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| bundle-dynamic-imports | components/layout/GlobalOverlays.tsx, app/layout.tsx    | Les fenêtres compte, panier, recherche et aperçu sont chargées à l’ouverture via next/dynamic. Leur hôte global remplace les copies par page. |
-| server-cache-react     | lib/catalog.ts                                          | React.cache déduplique la lecture du même parfum entre les métadonnées et la page dans une seule requête, sans cache global des sessions.     |
-| async-parallel         | app/compte/page.tsx, app/admin/page.tsx                 | Les requêtes indépendantes sont exécutées avec Promise.all après vérification de l’identité.                                                  |
-| server-auth-actions    | app/api/admin/stock/route.ts, app/api/commande/route.ts | L’identité est vérifiée dans les routes serveur ; les droits admin sont relus et la base applique encore la RLS.                              |
+| Règle                         | Fichiers concernés                                      | Application concrète                                                                                                                          |
+| ----------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| bundle-dynamic-imports        | components/layout/GlobalOverlays.tsx, app/layout.tsx    | Les fenêtres compte, panier, recherche et aperçu sont chargées à l’ouverture via next/dynamic. Leur hôte global remplace les copies par page. |
+| server-cache-react            | lib/catalog.ts                                          | React.cache déduplique la lecture du même parfum entre les métadonnées et la page dans une seule requête, sans cache global des sessions.     |
+| async-parallel                | app/compte/page.tsx, app/admin/page.tsx                 | Les requêtes indépendantes sont exécutées avec Promise.all après vérification de l’identité.                                                  |
+| server-auth-actions           | app/api/admin/stock/route.ts, app/api/commande/route.ts | L’identité est vérifiée dans les routes serveur ; les droits admin sont relus et la base applique encore la RLS.                              |
+| client-passive-event-listeners | components/home/ScrollToTop.tsx                         | L'écouteur de l'événement scroll utilise `{ passive: true }` pour ne jamais bloquer le fil d'exécution du défilement du navigateur.          |
+| rerender-derived-state        | components/home/ScrollToTop.tsx                         | Abonnement à un booléen dérivé (`isVisible`) plutôt qu'à la valeur brute du scroll en pixels, évitant les re-rendus continus.                  |
+| rendering-conditional-render  | components/home/ScrollToTop.tsx                         | Rendu conditionnel avec opérateur ternaire explicite pour éviter tout affichage indésirable et préserver l'accessibilité au clavier.           |
 
 Le skill Supabase connecté a également servi pendant l’intervention : documentation SSR et RLS consultée, rôles non modifiables par le client, fonctions privilégiées isolées dans un schéma privé, prix autoritaires et tests de permissions. Ce skill connecté n’est pas prétendu installé dans Antigravity.
 
