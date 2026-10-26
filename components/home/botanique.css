@@ -833,8 +833,30 @@ body {
   font-size: 30px;
   letter-spacing: 0.21em;
   font-weight: 500;
-  display: inline-block;
-  line-height: 1.4;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+.botanical-brand:hover {
+  opacity: 0.92;
+}
+.botanical-brand-logo {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.botanical-brand:hover .botanical-brand-logo {
+  transform: scale(1.04);
+}
+.botanical-brand-text {
+  display: inline-flex;
+  flex-direction: column;
 }
 .botanical-brand small {
   display: block;
@@ -842,7 +864,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 8px;
   letter-spacing: 0.36em;
-  margin-top: 0;
+  margin-top: 1px;
 }
 .botanical-navlinks {
   display: flex;
@@ -999,7 +1021,12 @@ body {
     padding: 0 4%;
   }
   .botanical-brand {
-    font-size: 24px;
+    font-size: 22px;
+    gap: 10px;
+  }
+  .botanical-brand-logo {
+    width: 36px;
+    height: 36px;
   }
   .botanical-announcement {
     font-size: 9px;
@@ -1022,7 +1049,7 @@ body {
   font-family: var(--font-serif);
 }
 .scentia-home .wish{display:grid;place-items:center}
-@media(max-width:400px){.botanical-brand{font-size:20px;letter-spacing:.14em}.botanical-icon{min-width:32px;padding:6px}.botanical-nav{gap:8px}.scentia-home .productBottom .add{font-size:9px;padding:10px;letter-spacing:.06em}}
+@media(max-width:400px){.botanical-brand{font-size:18px;letter-spacing:.14em;gap:8px}.botanical-brand-logo{width:28px;height:28px}.botanical-brand small{font-size:7px;letter-spacing:.28em}.botanical-icon{min-width:32px;padding:6px}.botanical-nav{gap:8px}.scentia-home .productBottom .add{font-size:9px;padding:10px;letter-spacing:.06em}}
 
 /* Bouton « Retour en haut » */
 .scroll-to-top {
@@ -1081,3 +1108,4 @@ body {
     height: 44px;
   }
 }
+
