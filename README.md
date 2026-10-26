@@ -143,5 +143,10 @@ Le skill vercel-react-best-practices est installé dans
 sont détaillées dans docs/SKILLS.md.
 ## Auteur et organisation
 
-Projet réalisé individuellement par Ilian Boudaa.
-L’historique Git retrace les modifications publié.
+Projet réalisé  par Ilian Boudaa et Aaron Bienaime.
+## Équipe et contributions
+
+- Ilian Boudaa : conception de la boutique, intégration Supabase,
+  espace administrateur, déploiement Vercel et tests.
+- [Aaron Bienaime : ajout du bouton « Retour en haut »
+  et vérification de son fonctionnement sur mobile.
