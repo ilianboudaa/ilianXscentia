@@ -1,0 +1,187 @@
+import type { SVGProps } from "react";
+
+interface ScentiaLogoProps extends SVGProps<SVGSVGElement> {
+  idPrefix?: string;
+  withBackground?: boolean;
+}
+
+export function ScentiaLogo({
+  idPrefix = "scentia-",
+  withBackground = false,
+  ...props
+}: ScentiaLogoProps) {
+  const bordeauxId = `${idPrefix}bordeaux`;
+  const goldId = `${idPrefix}gold`;
+  const goldSoftId = `${idPrefix}goldSoft`;
+
+  return (
+    <svg
+      viewBox="0 0 120 120"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <defs>
+        <linearGradient id={bordeauxId} x1="15%" y1="10%" x2="85%" y2="90%">
+          <stop offset="0%" stopColor="#7a2030" />
+          <stop offset="35%" stopColor="#5e1926" />
+          <stop offset="85%" stopColor="#420f1a" />
+          <stop offset="100%" stopColor="#2a050d" />
+        </linearGradient>
+
+        <linearGradient id={goldId} x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#a68023" />
+          <stop offset="25%" stopColor="#dfc067" />
+          <stop offset="50%" stopColor="#fff2c9" />
+          <stop offset="75%" stopColor="#d4af37" />
+          <stop offset="100%" stopColor="#8f6b17" />
+        </linearGradient>
+
+        <linearGradient id={goldSoftId} x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#faecc5" />
+          <stop offset="55%" stopColor="#d4af37" />
+          <stop offset="100%" stopColor="#9e771d" />
+        </linearGradient>
+      </defs>
+
+      {withBackground && <circle cx="60" cy="60" r="58" fill="#fdfbf7" />}
+
+      {/* LUXURY EMBLEMATIC CIRCULAR FRAME */}
+      <circle
+        cx="60"
+        cy="60"
+        r="56"
+        stroke={`url(#${goldId})`}
+        strokeWidth="1.3"
+        strokeOpacity="0.9"
+      />
+      <circle
+        cx="60"
+        cy="60"
+        r="52.5"
+        stroke={`url(#${goldId})`}
+        strokeWidth="0.6"
+        strokeDasharray="1.5 2.5"
+        strokeOpacity="0.65"
+      />
+
+      {/* Cardinal micro-diamonds */}
+      <path d="M 60 2.2 L 61.4 4 L 60 5.8 L 58.6 4 Z" fill={`url(#${goldId})`} />
+      <path
+        d="M 60 114.2 L 61.4 116 L 60 117.8 L 58.6 116 Z"
+        fill={`url(#${goldId})`}
+      />
+      <path d="M 2.2 60 L 4 61.4 L 5.8 60 L 4 58.6 Z" fill={`url(#${goldId})`} />
+      <path
+        d="M 114.2 60 L 116 61.4 L 117.8 60 L 116 58.6 Z"
+        fill={`url(#${goldId})`}
+      />
+
+      {/* BOTANICAL BACKGROUND BRANCHES (Behind S) */}
+      <path
+        d="M 44 24 C 41 16, 46 9, 54 8 C 62 7, 70 10, 76 15"
+        fill="none"
+        stroke={`url(#${goldId})`}
+        strokeWidth="1.1"
+        strokeLinecap="round"
+      />
+      <path
+        d="M 48 11 C 42 9, 38 4, 45 3 C 50 4, 50 9, 48 11 Z"
+        fill={`url(#${goldId})`}
+      />
+      <path
+        d="M 58 8 C 61 3, 68 2, 71 6 C 66 8, 60 7, 58 8 Z"
+        fill={`url(#${goldSoftId})`}
+      />
+      <path
+        d="M 76 15 C 82 12, 88 15, 91 11 C 86 9, 80 12, 76 15 Z"
+        fill={`url(#${goldId})`}
+      />
+
+      {/* THE AUTHENTIC PLAYFAIR DISPLAY S GLYPH */}
+      <path
+        d="M 58.26 22.5 Q 63.99 22.5 67.05 23.73 Q 70.12 24.95 72.36 26.38 Q 73.59 27.1 74.36 27.46 Q 75.12 27.81 75.84 27.81 Q 76.86 27.81 77.32 26.69 Q 77.78 25.57 78.09 23.32 L 80.44 23.32 Q 80.33 25.26 80.18 27.81 Q 80.03 30.37 79.98 34.61 Q 79.93 38.85 79.93 45.8 L 77.57 45.8 Q 77.27 40.59 75.28 35.78 Q 73.28 30.98 69.66 27.86 Q 66.03 24.75 60.41 24.75 Q 55.4 24.75 52.08 27.71 Q 48.76 30.67 48.76 35.68 Q 48.76 39.97 50.91 42.88 Q 53.05 45.8 56.99 48.5 Q 60.92 51.21 66.34 54.69 Q 71.34 57.96 75.33 61.18 Q 79.31 64.39 81.61 68.28 Q 83.91 72.16 83.91 77.78 Q 83.91 84.42 80.64 88.81 Q 77.37 93.21 71.85 95.35 Q 66.34 97.5 59.8 97.5 Q 53.77 97.5 50.24 96.27 Q 46.72 95.05 44.16 93.72 Q 41.91 92.29 40.69 92.29 Q 39.67 92.29 39.21 93.41 Q 38.75 94.54 38.44 96.78 L 36.09 96.78 Q 36.29 94.43 36.35 91.27 Q 36.4 88.1 36.45 83.04 Q 36.5 77.98 36.5 70.22 L 38.85 70.22 Q 39.26 76.76 41.15 82.43 Q 43.04 88.1 46.97 91.57 Q 50.91 95.05 57.45 95.05 Q 61.02 95.05 63.93 93.77 Q 66.85 92.49 68.58 89.79 Q 70.32 87.08 70.32 82.89 Q 70.32 78.7 68.38 75.53 Q 66.44 72.36 62.96 69.6 Q 59.49 66.85 54.79 63.99 Q 49.99 60.92 45.8 57.75 Q 41.61 54.58 39.1 50.55 Q 36.6 46.51 36.6 40.79 Q 36.6 34.46 39.67 30.42 Q 42.73 26.38 47.69 24.44 Q 52.64 22.5 58.26 22.5 Z"
+        fill={`url(#${bordeauxId})`}
+      />
+
+      {/* BOTANICAL FOREGROUND FLOURISHES (Intertwining over S) */}
+      <path
+        d="M 30 67 C 38 63, 47 61, 57 55 C 67 49, 75 44, 83 34"
+        fill="none"
+        stroke={`url(#${goldId})`}
+        strokeWidth="1.3"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M 64 50 C 72 46, 81 48, 86 43 C 79 39, 71 43, 64 50 Z"
+        fill={`url(#${goldId})`}
+      />
+      <path
+        d="M 64 50 C 72 45, 79 44, 86 43"
+        fill="none"
+        stroke="#7e5f12"
+        strokeWidth="0.35"
+      />
+
+      <path
+        d="M 48 60 C 42 66, 37 72, 40 77 C 44 75, 46 68, 48 60 Z"
+        fill={`url(#${goldSoftId})`}
+      />
+
+      {/* Lower Left Botanical Branch cradling the lower curve of S */}
+      <path
+        d="M 46 95 C 38 97, 29 95, 23 90 C 18 84, 18 76, 23 70 C 27 65, 33 66, 32 72 C 31 77, 26 80, 28 85 C 31 89, 38 90, 44 88"
+        fill="none"
+        stroke={`url(#${goldId})`}
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M 19 74 C 13 71, 9 74, 7 70 C 12 67, 16 68, 19 74 Z"
+        fill={`url(#${goldId})`}
+      />
+      <path
+        d="M 25 88 C 22 94, 17 96, 13 99 C 14 93, 19 91, 25 88 Z"
+        fill={`url(#${goldSoftId})`}
+      />
+
+      {/* EMBLEMATIC VANILLA / JASMINE FLOWER at the crest */}
+      <g transform="translate(68, 44) scale(0.95)">
+        <path
+          d="M 0 -8 C 1.6 -4, 1.6 -4, 0 0 C -1.6 -4, -1.6 -4, 0 -8 Z"
+          fill={`url(#${goldId})`}
+        />
+        <path
+          d="M 7.6 -2.5 C 4 -2, 4 -2, 0 0 C 4 0.8, 4 0.8, 7.6 -2.5 Z"
+          fill={`url(#${goldId})`}
+        />
+        <path
+          d="M 4.7 6.5 C 2.5 3.5, 2.5 3.5, 0 0 C 1.5 4, 1.5 4, 4.7 6.5 Z"
+          fill={`url(#${goldId})`}
+        />
+        <path
+          d="M -4.7 6.5 C -1.5 4, -1.5 4, 0 0 C -2.5 3.5, -2.5 3.5, -4.7 6.5 Z"
+          fill={`url(#${goldId})`}
+        />
+        <path
+          d="M -7.6 -2.5 C -4 0.8, -4 0.8, 0 0 C -4 -2, -4 -2, -7.6 -2.5 Z"
+          fill={`url(#${goldId})`}
+        />
+        <circle cx="0" cy="0" r="2.2" fill="#5e1926" />
+        <circle cx="0" cy="0" r="1.1" fill={`url(#${goldId})`} />
+        <circle cx="0" cy="0" r="0.5" fill="#fff" />
+      </g>
+
+      {/* LUXURY ESSENCE SPARKLES */}
+      <path
+        d="M 89 22 Q 89 26 93 26 Q 89 26 89 30 Q 89 26 85 26 Q 89 26 89 22 Z"
+        fill={`url(#${goldId})`}
+      />
+      <path
+        d="M 28 58 Q 28 61 31 61 Q 28 61 28 64 Q 28 61 25 61 Q 28 61 28 58 Z"
+        fill={`url(#${goldSoftId})`}
+      />
+    </svg>
+  );
+}

@@ -11,6 +11,7 @@ import {
   LogOut,
 } from "lucide-react";
 import { useApp } from "@/components/providers/AppProvider";
+import { ScentiaLogo } from "./ScentiaLogo";
 export function Header() {
   const [menu, setMenu] = useState(false),
     [account, setAccount] = useState(false);
@@ -30,8 +31,19 @@ export function Header() {
         Livraison offerte dès 150 € · Un échantillon offert avec chaque commande
       </div>
       <div className="botanical-nav">
-        <Link className="botanical-brand" href="/">
-          SCENTIA<small>MAISON DE PARFUM</small>
+        <Link
+          className="botanical-brand"
+          href="/"
+          aria-label="SCENTIA — Maison de parfum, retour à l'accueil"
+        >
+          <ScentiaLogo
+            className="botanical-brand-logo"
+            aria-hidden="true"
+            idPrefix="header-"
+          />
+          <span className="botanical-brand-text">
+            SCENTIA<small>MAISON DE PARFUM</small>
+          </span>
         </Link>
         <nav className="botanical-navlinks" aria-label="Navigation principale">
           <Link href="/#catalogue">Nos parfums</Link>
